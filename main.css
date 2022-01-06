@@ -1,0 +1,128 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+.bcg1 {
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: -1;
+}
+.wrapper {
+    overflow: hidden;
+    margin: 10vh auto;
+    width: 375px;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+}
+.logo {
+    height: calc(80vh - 66,77%);
+}
+.logo img {
+    display: block;
+    width: 100%;
+}
+.order {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.order h1 {
+    padding: 10px 0;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.order p {
+    padding: 0 10px;
+}
+.plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+}
+.icon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+.ap {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: end;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+.price {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: start;
+    padding-top: 2px;
+    letter-spacing: 1px;
+}
+.change {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+.change a:hover {
+    text-decoration: none;
+}
+.payment {
+    width: 90%;
+    height: 10%;
+    margin: 10px auto;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    
+}
+.payment:hover {
+    background-color: hsl(258, 60%, 57%);
+    cursor: pointer;
+}
+.payment p {
+    text-align: center;
+    line-height: 3.5em;
+}
+.cancel {
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+}
+.cancel p:hover {
+    cursor: pointer;
+}
+.cancel p {
+    text-align: center;
+}
+@media screen and (min-width: 1440px) { 
+ body {
+      width: 1440px;
+    }
+bcg1 {
+    background-image: url("images/pattern-background-desktop.svg");
+}
+  }
